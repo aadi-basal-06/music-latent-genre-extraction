@@ -1,0 +1,15 @@
+seed: 42
+device: auto
+data:
+  processed_dir: data/processed
+  splits_path: data/splits/splits.json
+training:
+  batch_size: 512
+  learning_rate: 0.0001
+  epochs: 30
+  optimizer: adam
+  checkpoint_dir: checkpoints/autoencoder
+  output_dir: outputs/autoencoder
+model:
+  input_dim: 500
+  latent_dim: 64
